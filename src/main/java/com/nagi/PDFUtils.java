@@ -87,7 +87,7 @@ public class PDFUtils {
                     imagesToPDF(filepath, PDFPath);
                     continue;
                 }
-                if (filepath.endsWith(".jpg")) {
+                if (filepath.endsWith(".jpg") || filepath.endsWith(".png")) {
                     // createFromFile is the easiest way with an image file
                     // if you already have the image in a BufferedImage,
                     // call LosslessFactory.createFromImage() instead
